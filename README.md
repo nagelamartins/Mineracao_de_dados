@@ -9,7 +9,7 @@ O principal objetivo é documentar a jornada de transformação de dados brutos 
 * **Acompanhar a evolução:** Registrar o meu progresso ao longo do curso, transformando dados brutos em insights e conhecimento.
 
 ## 🗂️ Estrutura do Repositório:
-* **Arquivos na raiz:** Você encontrará os notebooks Jupyter (`.ipynb`) e os arquivos de dados (`.csv`) correspondentes às atividades práticas. Os notebooks são nomeados como `Atividade-pratica-Sem-x` e os dados como `Base-dados_Sem-x`, seguindo a numeração de cada semana de estudo.
+* **Arquivos na raiz:** Você encontrará os notebooks Jupyter (`.ipynb`) e os arquivos de dados (`.csv`) correspondentes às atividades práticas. Os notebooks são nomeados como `Atividade-pratica_Sem-x` e os dados como `Base-dados_Sem-x`, seguindo a numeração de cada semana de estudo.
 
 * **`Resumos/`**: Esta pasta guarda os resumos semanais da matéria em formato Markdown (`.md`), que funcionam como o guia teórico do projeto.
 
