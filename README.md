@@ -14,7 +14,7 @@ O principal objetivo é documentar a jornada de transformação de dados brutos 
 * **`Resumos/`**: Esta pasta guarda os resumos semanais da matéria em formato Markdown (`.md`), que funcionam como o guia teórico do projeto.
 
 ## 📌 Conclusão:
-Este projeto é uma jornada de aprendizado contínuo. A Mineração de Dados é um campo vasto e fascinante, e este repositório é o meu primeiro passo documentado nesta área. Se tiver sugestões ou feedback, sinta-se à vontade para entrar em contato!
+Este projeto é uma jornada de aprendizado contínuo. A Mineração de Dados é um campo vasto e fascinante, e este repositório é um de meus primeiros passos documentados nesta área. Se tiver sugestões ou feedback, sinta-se à vontade para entrar em contato!
 
 ## 📧 Contato:
   * [LinkedIn](https://www.linkedin.com/in/nagelamartins/)
