@@ -111,6 +111,8 @@ Essas análises se dividem em:
     - Medidas de posição relativa: usadas para comparar valores entre dois conjuntos de dados, ou entre valores de um mesmo conjunto de dados. Para conjuntos de dados diferentes, utiliza-se o *escore z*, para o mesmo conjunto de dados, utiliza-se os *quartis*;
     - Medidas de associação: determina a existência de uma dependência entre dois atributos diferentes. "[...] se dois atributos desviam de suas respectivas médias de maneira similar, é possível dizer que eles são covariantes [...]" (CASTRO; FERRARI, 2016, p. 76). Essa covariância pode ser representada em uma *Matriz de covariância*, onde "[...] as variâncias aparecem na diagonal principal da matriz, que é quadrada e simétrica, e as covariâncias aparecem fora da diagonal". (CASTRO; FERRARI, 2016, p. 76).
       
+      O coeficiente de correlação "[...]  mede a dependência linear entre atributos – em outras palavras, ele determina se há uma relação (linear) entre os atributos". (CASTRO; FERRARI, 2016, p. 77). Quando o coeficiente de correlação entre os atributos x e y tem valor igual a 1, então, tem-se uma correlação totalmente positiva. Se o valor for igual a -1, a correlação é totalmente negativa. Se o valor for zero, indica a ausência de correlação. 
+      
       Exemplos:
 
       <img width="1000" height="auto" alt="Correlação positiva" src="https://github.com/user-attachments/assets/6b4dca05-d734-41d3-a6a5-192f0326cae5" />
