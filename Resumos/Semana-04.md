@@ -33,7 +33,7 @@ Existem dois erros importantes para a Aprendizagem Supervisionada:
 * Erro de generalização: "Esse erro surge, por exemplo, quando o modelo é treinado em excesso e absorve os ruídos dos dados de treinamento, sofrendo de uma sobregeneralização dos resultados". (CASTRO; FERRARI, 2016, p. 151).
 
 A figura exemplifica esses erros. A figura (a) apresenta um erro de representação, onde o modelo não é flexível o suficiente para representar o
-conjunto dos objetos. A figura (b) indica um erro de generalização: o modelo pode absorver os ruídos contidos nos dados e apresentar baixa 
+conjunto dos dados. A figura (b) indica um erro de generalização: o modelo pode absorver os ruídos contidos nos dados e apresentar baixa 
 capacidade de generalização. Por fim, a figura (c) apresenta um bom equílibrio entre *bias-variância*, ou seja, "[...] possui um baixo erro de 
 treinamento graças à flexibilidade do modelo e ao mesmo tempo não 'interpola' os ruídos da base". (CASTRO; FERRARI, 2016, p. 151)  
 
@@ -52,7 +52,7 @@ treinamento e avaliado periodicamente no conjunto de teste. O treinamento é int
 "Uma forma bastante comum de validação cruzada em mineração de dados é a chamada **validação cruzada em k-pastas** (k-fold cross-validation), 
 que consiste em dividir a base de dados em k subconjuntos, sendo k–1 pastas para treinamento e 1 pasta para teste. Esse processo de treinamento 
 e teste é repetido com todos os k subconjuntos, e a média dos desempenhos para as bases de treinamento e as bases de teste é adotada como 
-indicador de qualidade do modelo". (CASTRO; FERRARI, 2016, p. 157). É usual utilizar 10 pastas para estimar o erro, embora ainda existirem debatessobre o número adequado de pastas. "[...] também é usual executar a validação em 10-pastas 10 vezes, o que implica treinar o algoritmo 100 vezes para uma base que corresponde a 9/10 da base completa e testá-lo 100 vezes para uma base que corresponde a 1/10 da base completa". (CASTRO; FERRARI, 2016, p. 158).   
+indicador de qualidade do modelo". (CASTRO; FERRARI, 2016, p. 157). É usual utilizar 10 pastas para estimar o erro, embora ainda existirem debates sobre o número adequado de pastas. "[...] também é usual executar a validação em 10-pastas 10 vezes, o que implica treinar o algoritmo 100 vezes para uma base que corresponde a 9/10 da base completa e testá-lo 100 vezes para uma base que corresponde a 1/10 da base completa". (CASTRO; FERRARI, 2016, p. 158).   
 
 Outra forma comum de validação, especialmente em bases de dados com poucos objetos, é a **validação cruzada leave-one-out** (LOOCV). Nela, apenas um objeto por vez é utilizado para teste, enquanto os outros objetos são utilizados para treinamento.   
 
@@ -97,6 +97,16 @@ categorias de divisão de problemas: **problemas binários** e **problemas multi
 
   *Fonte: CASTRO; FERRARI, 2016, p. 164*
 
+### Algoritmos de Classificação:
+
+<img width="2376" height="2160" alt="Algoritmos de Classificação" src="https://github.com/user-attachments/assets/355335af-527d-4645-9af3-553a37c96dba" />  
+
+*Fonte: Gerado com Napkin.AI a partir do texto-base e anotações da aula.*  
+
+* Classificador K-NN (baseado em distância): classifica um objeto de acordo com seu vizinhos mais próximos. Esse novo objeto pertencerá à classe que contiver a maioria de vizinhos próximos à ele;
+* Árvores de Decisão: "[...] estrutura em forma de árvore na qual cada nó interno corresponde a um teste de um atributo, cada ramo representa um resultado do teste e os nós folhas representam classes ou distribuições de classes. O nó mais elevado da árvore é conhecido como nó raiz, e cada caminho da raiz até um nó folha corresponde a uma regra de classificação". (CASTRO; FERRARI, 2016, p. 170). O atributo a ser utilizado para construir cada nó da Árvore é escolhido através do cálculo de Ganho de Informações. O algoritmo seleciona o atributo que mais reduz a Entropia (incerteza) da mistura de classes, garantindo subconjuntos de dados o mais puros possível;
+* One-Rule (1R): busca encontrar regras de classificação que testam apenas um atributo da base de dados. Tem baixo custo computacional e boa acurária para bases de dados simples;
+* Naÿve Bayes (probabilístico): "[...] usados para predizer a probabilidade de pertinência de um objeto a determinada classe". (CASTRO; FERRARI, 2016, p. 186). É baseado no Teorema de Bayes, e entende que cada atributo contribui de forma independente para a classificação. 
 
 
 
