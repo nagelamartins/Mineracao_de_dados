@@ -58,7 +58,24 @@
       * **Diagnóstico**: remove as anomalias da base e readéqua o modelo;
       * **Acomodação**: incorpora as anomalias ao modelo e, após isso, emprega um método de classificação.
 
-    * **Tipo 2 - supervisionada**: as técnicas para objetos de classes normais e anômalas são modeladas. As bases de dados precisam ser representativas para ambas as 
-    classes, já que, no geral, as anomalias acontecem com menor frequência (por isso, pode ser necessário inserir anomalias artificiais para balancear o modelo). 
+    * **Tipo 2 - supervisionada**: as técnicas para objetos de classes normais e anômalas são modeladas. As bases de dados precisam ser representativas para ambas       as classes, já que, no geral, as anomalias acontecem com menor frequência (por isso, pode ser necessário inserir anomalias artificiais para balancear o modelo).
+    
+* **Separação do conjunto de treinamento e teste**: os dados são separados de acordo com os rótulos;
+
+* **Treinamento e teste**: gera-se o modelo;
+
+* **Avaliação de saída**: a anomalia é a classe alvo. Para fazer a avaliação, pode-se usar uma matriz de confusão, bem como alguns indicadores:
+  * Taxa de detecção (TVP, ou sensibilidade): porcentagem de anomalias detectadas corretamente (VP/(VP+FN));
+  * Taxa de alarmes falsos (TFP): porcentagem de objetos normais detectados incorretamente (FP/(FP+VN));
+  * Valor preditivo de uma anomalia (Pr): probabilidade de um objeto ser uma anomalia (VP/(VP+FP));
+  * Acurácia (ACC): porcentagem global de objetos corretos ((VP+VN)/(VP+FP+VN+FN));
+  * Erro (E): porcentagem global de objetos errados (1-ACC)
+  * Curva ROC: Verifica a relação entre a taxa de detecção e a taxa de alarmes falsos. Quando ela é convexa (positiva), significa que o modelo está classificando bem, já que, a taxa de detecção, em geral, é maior que a taxa de alarmes falsos. O exemplo é representado pela figura abaixo:  
+  
+
+  <img width="1022" height="625" alt="Curva ROC" src="https://github.com/user-attachments/assets/08b2f808-5c2b-41b1-82c8-10a3b5807f72" />
+
+  *Fonte: CASTRO; FERRARI, 2016, p. 277.*
+
 
 
