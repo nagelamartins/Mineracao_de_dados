@@ -136,7 +136,7 @@ mais próximos em cada passo. No entanto, a "proximidade" é calculada pela maio
 mais compactos e esféricos.
 
 
-
+*OBS: O resumo dos algoritmos de agrupamento foi feito com auxílio de Inteligência Artificial.*
 
 
 
